@@ -106,10 +106,10 @@
     <script src="scripts.js"></script>
     <script>
     // JavaScript to dynamically load the Book Now button
-    fetch('book-now-button.html')
+    fetch('booknowb.html')
         .then(response => response.text())
         .then(data => {
-            document.getElementById('booknowb').innerHTML = data;
+            document.getElementById('book-now-button-wrapper').innerHTML = data;
         });
     </script>
 </body>
