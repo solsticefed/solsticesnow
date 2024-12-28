@@ -35,6 +35,16 @@ body {
     letter-spacing: 1px;
 }
 
+.mountain-divider {
+    
+}
+
+
+.mountain-divider {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: -5mm;
+}
 h1, h2, h3 {
     font-size: 15px;
     margin: 1px;
@@ -57,6 +67,13 @@ p.description {
     line-height: 1.6;
     text-align: justify;
     margin-bottom: 20px;
+}
+
+.footer {
+    text-align: center;
+    font-size: 10px;
+    color: #888;
+    margin-top: 10px;
 }
 
 .profile-picture {
@@ -93,6 +110,7 @@ p.description {
 }
 
 
+
 /****************** FAQ **********************/
 
 .faq-item {
@@ -116,7 +134,6 @@ p.description {
     line-height: 1.6;
     text-align: justify;
     letter-spacing: 1px;
-
 }
 
 .faq-item button:hover {
@@ -132,18 +149,6 @@ p.description {
     font-size: 13px;
 }
 
-/************************* END FAQ *********************/
-
-.footer {
-    text-align: center;
-    font-size: 10px;
-    color: #888;
-    margin-top: 10px;
-}
-
-.mountain-divider {
-    margin-bottom: -5mm;
-}
 
 /************************** Modal Styles *************************/
 .modal {
@@ -195,8 +200,7 @@ p.description {
 }
 
 
-/************************ END MODAL ************************/
-
+/****************** PIN ENTRY **************/
 #pin-form {
     text-align: center; /* Center the pin form */
     padding: 10px 0; /* Add padding to the top and bottom */
@@ -301,8 +305,6 @@ p.description {
     position: relative;
     top: 10%;
 }
-
-/******************************** BOOK NOW **********************************/
 
 .book-now-button-wrapper path.one {
     transition: 0.4s;
@@ -444,8 +446,4 @@ p.description {
 }
 
 /****************** Divider ***********************/
-.mountain-divider {
-	padding-top: 15px;
-	padding-bottom: 15px;
 
-}
