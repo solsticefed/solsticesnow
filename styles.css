@@ -26,7 +26,6 @@ body {
     overflow-y: auto;
 }
 
-
 .header h1 {
     font-size: 16px;
     font-weight: bold;
@@ -34,11 +33,6 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-
-.mountain-divider {
-    
-}
-
 
 .mountain-divider {
 	padding-top: 15px;
@@ -108,7 +102,6 @@ p.description {
     border-radius: 5px;
     text-transform: uppercase;
 }
-
 
 
 /****************** FAQ **********************/
@@ -201,6 +194,7 @@ p.description {
 
 
 /****************** PIN ENTRY **************/
+
 #pin-form {
     text-align: center; /* Center the pin form */
     padding: 10px 0; /* Add padding to the top and bottom */
@@ -253,6 +247,7 @@ p.description {
     transition: .5s; /* Transition effect */
     color: #f595ea;
 }
+
 
 /**************************** BOOK NOW *************************/
 
@@ -330,6 +325,7 @@ p.description {
     animation: color_anim 1s infinite 0.4s;
 }
 
+
 /*************** SVG animations **********************************/
 
 @keyframes color_anim {
@@ -344,12 +340,14 @@ p.description {
     }
 }
 
+
 /**************************** SCROLL BAR ************************************/
 
 * {
     scrollbar-width: thin;
     scrollbar-color: black #7a4bde;
 }
+
 
 /********************************* SOCIAL MEDIA ICONS **********************/
 
@@ -444,6 +442,3 @@ p.description {
     color: #41267a;
     font-size: 20px;
 }
-
-/****************** Divider ***********************/
-
