@@ -257,8 +257,7 @@ p.description {
 
 .book-now-button-wrapper .cta {
     display: flex;
-	width: 50px;
-    padding: 6px 18px; /* Smaller padding for a smaller button */
+    padding: 4% 12%; /* Relative padding */
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-size: 14px; /* Smaller font size */
@@ -268,6 +267,8 @@ p.description {
     box-shadow: 4px 4px 0 #7a4bde;
     transform: skewX(-15deg);
     text-transform: uppercase;
+    width: 30%;
+    margin: 0 auto;
 }
 
 .book-now-button-wrapper .cta:focus {
