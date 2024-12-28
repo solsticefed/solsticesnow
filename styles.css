@@ -26,20 +26,6 @@ body {
     overflow-y: auto;
 }
 
-.main-container {
-    display: flex;
-}
-
-.bookings-container {
-    flex-grow: 1; /* Adjust to take the remaining space */
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
 
 .header h1 {
     font-size: 16px;
