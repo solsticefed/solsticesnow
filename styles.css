@@ -145,7 +145,7 @@ p.description {
     margin-bottom: -5mm;
 }
 
-/* Modal Styles */
+/************************** Modal Styles *************************/
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -193,6 +193,9 @@ p.description {
     text-decoration: none;
     cursor: pointer;
 }
+
+
+/************************ END MODAL ************************/
 
 #pin-form {
     text-align: center; /* Center the pin form */
@@ -255,6 +258,7 @@ p.description {
 
 .book-now-button-wrapper .cta {
     display: flex;
+	width: 50px;
     padding: 6px 18px; /* Smaller padding for a smaller button */
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
