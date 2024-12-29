@@ -40,15 +40,13 @@ body {
     letter-spacing: 1px;
 }
 
-.mountain-divider {
-	padding-top: 15px;
-	padding-bottom: 15px;
-}
 
 .mountain-divider {
 	padding-top: 15px;
 	padding-bottom: 15px;
 	margin-bottom: -5mm;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 h1, h2, h3 {
@@ -62,9 +60,17 @@ h1, h2, h3 {
 
 p.description {
     font-size: 13px;
-    margin-bottom: 10px;
     line-height: 1.5;
     text-align: justify;
+}
+
+.p1 {
+	justify:left;
+	font-size: 13px;
+    	margin-bottom: 20px;
+    	line-height: 1;
+    	text-align: center;
+	
 }
 
 .about 		{
@@ -86,8 +92,8 @@ p.description {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 150px;
-    height: 150px;
+    width: 175px;
+    height: 175px;
     margin: 0 auto 10px;
     position: relative;
     background-color: #ccc; /* Light grey background for visibility */
@@ -142,7 +148,7 @@ p.description {
 }
 
 .faq-item button:hover {
-    background-color: #e0e0e0;
+    background-color: #dfd2fc;
 }
 
 .faq-item .answer {
