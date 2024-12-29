@@ -10,8 +10,8 @@ body {
 
 .a6-container {
     width: 148mm;
-    height: auto;
-    min-height: 148mm;
+    height: 100vh;
+    min-height: 148mm
     background-color: rgba(255, 255, 255, 0.85);
     border: 2px solid #7a4bde;
     padding: 15px;
@@ -26,6 +26,13 @@ body {
     overflow-y: auto;
 }
 
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
 .header h1 {
     font-size: 16px;
     font-weight: bold;
@@ -37,8 +44,14 @@ body {
 .mountain-divider {
 	padding-top: 15px;
 	padding-bottom: 15px;
+}
+
+.mountain-divider {
+	padding-top: 15px;
+	padding-bottom: 15px;
 	margin-bottom: -5mm;
 }
+
 h1, h2, h3 {
     font-size: 15px;
     margin: 1px;
