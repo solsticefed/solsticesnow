@@ -301,8 +301,6 @@ p.description {
     top: 10%;
 }
 
-/******************************** BOOK NOW **********************************/
-
 .book-now-button-wrapper path.one {
     transition: 0.4s;
     transform: translateX(-60%);
@@ -325,6 +323,7 @@ p.description {
 .book-now-button-wrapper .cta:hover path.two {
     transform: translateX(0%);
     animation: color_anim 1s infinite 0.4s;
+}
 
 /*************** SVG animations **********************************/
 
