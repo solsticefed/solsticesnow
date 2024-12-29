@@ -9,9 +9,9 @@ body {
 }
 
 .a6-container {
-    width: 148mm;
-    height: 100vh;
-    min-height: 148mm
+    width: 33vw;
+    height: 148vh;
+    max-height: 90vh;
     background-color: rgba(255, 255, 255, 0.85);
     border: 2px solid #7a4bde;
     padding: 15px;
@@ -22,7 +22,6 @@ body {
     position: relative;
     top: 10px;
     left: 10px;
-    max-height: 80vh;
     overflow-y: auto;
 }
 
