@@ -1,30 +1,31 @@
-# Highland Woodmill
+# Solstice Snow
 
-Welcome to Highland Woodmill! We specialize in building custom sheds and huts using locally sourced timber from Scotland.
+Welcome to Solstice Snow! We offer winter sports and activities in the beautiful Scottish mountains.
 
 ## Services
 
-- **Custom Sheds**: Perfect for storage, workshops, or other uses.
-- **Handcrafted Huts**: Ideal for garden retreats or outdoor workspaces.
+- **Skiing and Snowboarding**: Rentals and lessons available.
+- **Winter Activities**: Snowshoeing and tobogganing.
+- **Accommodation**: Cozy mountain lodges and on-site dining.
 
 ## Why Choose Us?
 
-- **Quality Timber**: Sourced sustainably from Scottish forests.
-- **Expert Craftsmanship**: Skilled builders with years of experience.
-- **Custom Designs**: Tailored to your specific needs.
+- **Great Location**: Stunning Scottish mountain views.
+- **Experienced Team**: Skilled and friendly staff.
+- **Family-Friendly**: Fun for all ages.
 
 ## Contact Us
 
-Ready to start your project? Get in touch with us:
+Plan your visit:
 
 - **Phone**: +44 1234 567890
-- **Email**: info@highlandwoodmill.co.uk
-- **Address**: 123 Forest Lane, Inverness, Scotland
+- **Email**: info@solsticesnow.co.uk
+- **Address**: 456 Mountain Path, Highland, Scotland
 
-Follow us on social media:
+Follow us:
 
-- [Facebook](https://www.facebook.com/highlandwoodmill)
-- [Instagram](https://www.instagram.com/highlandwoodmill)
-- [Twitter](https://www.twitter.com/highwoodmill)
+- [Facebook](https://www.facebook.com/solsticesnow)
+- [Instagram](https://www.instagram.com/solsticesnow)
+- [Twitter](https://www.twitter.com/solsticesnow)
 
-Thank you for choosing Highland Woodmill!
+Thank you for choosing Solstice Snow!
