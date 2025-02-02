@@ -1,25 +1,30 @@
-# SolsticeSnow
+# Highland Woodmill
 
-Snowboard Instructor Service
+Welcome to Highland Woodmill! We specialize in building custom sheds and huts using locally sourced timber from Scotland.
 
-We offer private snowboard lessons for all skill levels.
+## Services
 
-Services:
+- **Custom Sheds**: Perfect for storage, workshops, or other uses.
+- **Handcrafted Huts**: Ideal for garden retreats or outdoor workspaces.
 
-One-on-one snowboard lessons
+## Why Choose Us?
 
-Flexible scheduling
+- **Quality Timber**: Sourced sustainably from Scottish forests.
+- **Expert Craftsmanship**: Skilled builders with years of experience.
+- **Custom Designs**: Tailored to your specific needs.
 
-How to Book:
+## Contact Us
 
-Contact us to schedule your lesson.
+Ready to start your project? Get in touch with us:
 
-Meet your instructor on the slopes.
+- **Phone**: +44 1234 567890
+- **Email**: info@highlandwoodmill.co.uk
+- **Address**: 123 Forest Lane, Inverness, Scotland
 
-Contact:
+Follow us on social media:
 
-Email: [YourEmail@example.com]
+- [Facebook](https://www.facebook.com/highlandwoodmill)
+- [Instagram](https://www.instagram.com/highlandwoodmill)
+- [Twitter](https://www.twitter.com/highwoodmill)
 
-Phone: [YourPhoneNumber]
-
-Let’s hit the slopes!
+Thank you for choosing Highland Woodmill!
