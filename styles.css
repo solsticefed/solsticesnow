@@ -459,3 +459,70 @@ p.description {
     color: #41267a;
     font-size: 20px;
 }
+
+/*************** Media **************/
+/* For devices with a max-width of 768px */
+@media (max-width: 768px) {
+        .a6-container {
+        width: 100% !important; /* Set to full width */
+        height: auto !important; /* Let height be auto for mobile */
+        padding: 10px !important; /* Adjust padding *
+        top: 0 !important; /* Remove top positioning */
+        left: 0 !important; /* Remove left positioning */
+
+       
+    }
+
+    .header h1 {
+        font-size: 1.3em !important; /* Increase header font size */
+    }
+
+    .profile-picture {
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.1em !important; /* Adjust font size for headings */
+    }
+
+    p.description, .p1, .about {
+        font-size: 0.95em !important; /* Adjust paragraph text size */
+    }
+}
+
+/* For devices with a max-width of 480px */
+@media (max-width: 480px) {
+    .a6-container {
+        width: 100% !important;  /* Ensure the container takes up full width */
+        height: auto !important;  /* Set height to auto */
+        padding: 10px !important;  /* Adjust padding */
+    }
+
+    .header {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+
+    .header h1 {
+        font-size: 1.1em !important; /* Smaller header font size */
+    }
+
+    .profile-picture {
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    h1, h2, h3 {
+        font-size: 1em !important;
+    }
+
+    p.description, .p1, .about {
+        font-size: 0.85em !important; /* Reduce font size for small devices */
+    }
+
+    .about, .p1, .description {
+        margin-bottom: 10px !important;
+    }
+}
+
