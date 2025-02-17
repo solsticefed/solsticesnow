@@ -119,15 +119,17 @@ p.description {
 /* For devices with a max-width of 768px */
 @media (max-width: 768px) {
     .a6-container {
-        width: 100% !important;  /* Set the width to 100% for smaller screens */
-        max-width: none !important; /* Remove the max-width to prevent any constraints */
-        height: auto !important;   /* Set the height to auto to avoid overflows */
+        width: 100% !important; /* Set the width to 100% */
+        height: auto !important; /* Set height to auto */
+        max-width: none !important; /* Remove max-width */
         padding: 10px !important; /* Adjust padding */
-        border: none !important;  /* Remove border on mobile */
+        border: none !important; /* Remove border */
+        top: 0 !important; /* Ensure no top margin/padding */
+        left: 0 !important; /* Ensure no left margin/padding */
     }
 
     .header h1 {
-        font-size: 1.3em;
+        font-size: 1.3em !important; /* Increase header font size */
     }
 
     .profile-picture {
@@ -136,11 +138,11 @@ p.description {
     }
 
     h1, h2, h3 {
-        font-size: 1.1em;
+        font-size: 1.1em !important; /* Adjust font size for headings */
     }
 
     p.description, .p1, .about {
-        font-size: 0.95em;
+        font-size: 0.95em !important; /* Adjust paragraph text size */
     }
 }
 
@@ -150,29 +152,15 @@ p.description {
         width: 100% !important;  /* Ensure the container takes up full width */
         height: auto !important;  /* Set height to auto for smaller screens */
         padding: 5px !important;  /* Adjust padding */
-    max-height: 90vh;
-    background-color: rgba(255, 255, 255, 0.85);
-    border: 2px solid #7a4bde;
-    padding: 15px;
-    box-sizing: border-box;
-    display: flex
-;
-    flex-direction: column;
-    justify-content: flex-start;
-    position: relative;
-    top: 10px;
-    left: 10px;
-    overflow-y: auto;
-}
     }
 
     .header {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: column !important;
+        align-items: flex-start !important;
     }
 
     .header h1 {
-        font-size: 1.1em !important;
+        font-size: 1.1em !important; /* Smaller header font size */
     }
 
     .profile-picture {
@@ -185,7 +173,7 @@ p.description {
     }
 
     p.description, .p1, .about {
-        font-size: 0.85em !important;
+        font-size: 0.85em !important; /* Reduce font size for small devices */
     }
 
     .about, .p1, .description {
