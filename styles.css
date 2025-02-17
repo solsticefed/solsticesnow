@@ -130,57 +130,42 @@ p.description {
 
 /* For devices with a max-width of 768px */
 @media (max-width: 768px) {
-    /* Ensure the a6-container forces full width without inheritance */
-    .body {
-        width: 100% !important; /* Force full width */
-        max-width: none !important; /* Remove max-width */
-        height: auto !important; /* Ensure auto height */
+    body {
+        width: 100% !important; /* Set to full width */
+        max-width: none !important; /* Remove max-width restriction */
+        height: auto !important; /* Let height be auto for mobile */
         padding: 10px !important; /* Adjust padding */
-        margin: 0 !important; /* Remove margins */
-        box-sizing: border-box !important; /* Force proper box-sizing */
-        top: 0 !important; /* Remove any top positioning */
-        left: 0 !important; /* Remove left positioning */
         border: none !important; /* Remove border */
-        flex: 0 0 100% !important; /* Prevent flexbox from shrinking/growing */
+        margin: 0 !important; /* Ensure no margins */
+        box-sizing: border-box !important; /* Ensure proper box-sizing */
     }
 
-    }
-    .parent-of-a6-container {
-    width: 100% !important; /* Override any conflicting width */
-}
-
-    /* Ensure that the header has a readable font size */
     .header h1 {
-        font-size: 1.3em !important;
+        font-size: 1.3em !important; /* Increase header font size */
     }
 
-    /* Adjust profile picture size */
     .profile-picture {
         width: 80px !important;
         height: 80px !important;
     }
 
-    /* Adjust heading sizes */
     h1, h2, h3 {
-        font-size: 1.1em !important;
+        font-size: 1.1em !important; /* Adjust font size for headings */
     }
 
-    /* Adjust text size */
     p.description, .p1, .about {
-        font-size: 0.95em !important;
+        font-size: 0.95em !important; /* Adjust paragraph text size */
     }
 }
 
 /* For devices with a max-width of 480px */
 @media (max-width: 480px) {
-    /* Force the container to take full width */
-    .a6-container {
-        width: 100% !important;  /* Full width */
-        height: auto !important;  /* Auto height */
+    body {
+        width: 100% !important;  /* Ensure the container takes up full width */
+        height: auto !important;  /* Set height to auto */
         padding: 5px !important;  /* Adjust padding */
     }
 
-    /* Stack the header items vertically */
     .header {
         flex-direction: column !important;
         align-items: flex-start !important;
@@ -190,23 +175,19 @@ p.description {
         font-size: 1.1em !important; /* Smaller header font size */
     }
 
-    /* Reduce profile picture size */
     .profile-picture {
         width: 60px !important;
         height: 60px !important;
     }
 
-    /* Adjust heading sizes further for small devices */
     h1, h2, h3 {
         font-size: 1em !important;
     }
 
-    /* Adjust text size */
     p.description, .p1, .about {
-        font-size: 0.85em !important;
+        font-size: 0.85em !important; /* Reduce font size for small devices */
     }
 
-    /* Adjust margins to prevent overflow */
     .about, .p1, .description {
         margin-bottom: 10px !important;
     }
