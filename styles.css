@@ -9,7 +9,7 @@ body {
 }
 
 .a6-container {
-    width: 33vw;
+    width: 36vw;
     height: 148vh;
     max-height: 90vh;
     background-color: rgba(255, 255, 255, 0.85);
@@ -68,9 +68,9 @@ p.description {
 	justify:left;
 	font-size: 13px;
     	margin-bottom: 20px;
-    	line-height: 1;
+    	line-height: 1.2;
     	text-align: center;
-	
+	 letter-spacing: 1px;
 }
 
 .about 		{
@@ -154,10 +154,9 @@ p.description {
 .faq-item .answer {
     display: none;
     padding: 5px 15px;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.5;
     color: #555;
-    font-size: 13px;
 }
 
 
@@ -478,8 +477,8 @@ p.description {
     }
 
     .profile-picture {
-        width: 100px !important;
-        height: 100px !important;
+        width: 120px !important;
+        height: 120px !important;
     }
 
     h1, h2, h3 {
@@ -509,8 +508,8 @@ p.description {
     }
 
     .profile-picture {
-        width: 100px !important;
-        height: 100px !important;
+        width: 120px !important;
+        height: 120px !important;
     }
 
     h1, h2, h3 {
