@@ -1,30 +1,17 @@
-
-   /* Base styles for the body */
 body {
     margin: 0;
-    padding: 20px;
     background-color: #fff;
     color: #000;
     font-family: 'Poppins', sans-serif;
+    padding: 20px;
     background-size: cover;
     background-position: center;
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.85);
-    border: 2px solid #7a4bde;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    overflow-y: auto;
-
 }
 
-.notinuse {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+.a6-container {
+    width: 33vw;
+    height: 148vh;
+    max-height: 90vh;
     background-color: rgba(255, 255, 255, 0.85);
     border: 2px solid #7a4bde;
     padding: 15px;
@@ -32,6 +19,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    position: relative;
+    top: 10px;
+    left: 10px;
     overflow-y: auto;
 }
 
@@ -43,20 +33,24 @@ body {
 }
 
 .header h1 {
-    font-size: 1.5em;
+    font-size: 16px;
     font-weight: bold;
     margin: 0;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
+
 .mountain-divider {
-    padding: 15px 0;
-    margin-bottom: -5mm;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: -5mm;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 h1, h2, h3 {
-    font-size: 1.2em;
+    font-size: 15px;
     margin: 1px;
     font-weight: bold;
     text-transform: uppercase;
@@ -65,22 +59,23 @@ h1, h2, h3 {
 }
 
 p.description {
-    font-size: 1em;
+    font-size: 13px;
     line-height: 1.5;
     text-align: justify;
 }
 
 .p1 {
-    justify-content: left;
-    font-size: 1em;
-    margin-bottom: 20px;
-    line-height: 1;
-    text-align: center;
+	justify:left;
+	font-size: 13px;
+    	margin-bottom: 20px;
+    	line-height: 1;
+    	text-align: center;
+	
 }
 
-.about {
+.about 		{
     margin-top: 10px;
-    font-size: 1em;
+    font-size: 13px;
     line-height: 1.6;
     text-align: justify;
     margin-bottom: 20px;
@@ -88,7 +83,7 @@ p.description {
 
 .footer {
     text-align: center;
-    font-size: 0.8em;
+    font-size: 10px;
     color: #888;
     margin-top: 10px;
 }
@@ -97,12 +92,12 @@ p.description {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 100px;
+    width: 175px;
+    height: 175px;
     margin: 0 auto 10px;
     position: relative;
-    background-color: #ccc;
-    padding: 0;
+    background-color: #ccc; /* Light grey background for visibility */
+    padding: 0; /* Padding to simulate border effect */
     cursor: pointer;
 }
 
@@ -117,7 +112,7 @@ p.description {
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 0.7em;
+    font-size: 8px;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.5);
     padding-left: 5px;
@@ -126,69 +121,341 @@ p.description {
     text-transform: uppercase;
 }
 
-/* Mobile Media Queries */
 
-/* For devices with a max-width of 768px */
-@media (max-width: 768px) {
-    body {
-        width: 100% !important; /* Set to full width */
-        max-width: none !important; /* Remove max-width restriction */
-        height: auto !important; /* Let height be auto for mobile */
-        padding: 10px !important; /* Adjust padding */
-        border: none !important; /* Remove border */
-        margin: 0 !important; /* Ensure no margins */
-        box-sizing: border-box !important; /* Ensure proper box-sizing */
+/****************** FAQ **********************/
+
+.faq-item {
+    margin-bottom: 8px;
+}
+.faq {
+ 
+}
+.faq-item button {
+    width: 100%;
+    padding: 8px;
+    background-color: #f8f8f8;
+    color: #333;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+.faq-item button:hover {
+    background-color: #dfd2fc;
+}
+
+.faq-item .answer {
+    display: none;
+    padding: 5px 15px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #555;
+    font-size: 13px;
+}
+
+
+/************************** Modal Styles *************************/
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: rgba(255, 255, 255, 0.85);
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 10px 10px 0px 10px; /* Reduce bottom padding */
+    width: 400px; /* Business card size */
+    height: 200px;
+    box-sizing: border-box;
+    position: relative;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.modal-content p {
+    text-align: center; /* Center the text */
+    padding-top: 5px; /* Add padding to the top of paragraphs */
+    font-family: 'Poppins', sans-serif;
+}
+
+.close {
+    color: #aaa;
+    position: absolute; /* Make sure the close button is positioned absolutely */
+    top: -1%; /* Move 5% further up */
+    right: 2%; /* Move 5% further right */
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #7a4bde;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/****************** PIN ENTRY **************/
+
+#pin-form {
+    text-align: center; /* Center the pin form */
+    padding: 10px 0; /* Add padding to the top and bottom */
+}
+
+#pin-form p {
+    margin-bottom: 10px; /* Space between the text and the input field */
+    font-size: 12px; /* Ensure font size is consistent */
+    letter-spacing: 0.9px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#pin {
+    padding: 5px; /* Padding inside the input field */
+    font-size: 14px; /* Increase font size */
+    border: 2px solid #7a4bde; /* Light grey border */
+    border-radius: 0px; /* Rounded corners */
+    width: calc(100% - 20px); /* Width of input field */
+    max-width: 137px; /* Maximum width to prevent it from being too large */
+    text-align: center; /* Center the pin number */
+    display: block; /* Make input a block element */
+    margin: 0 auto 10px auto; /* Center the input and add space below */
+    letter-spacing: 4px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#pin-form button {
+    width: calc(100% - 20px); /* Adjust width to fit within the container */
+    max-width: 148px; /* Maximum width */
+    padding: 5px 10px; /* Adjust padding for a better fit */
+    font-size: 12px; /* Font size */
+    color: #fff; /* White text color */
+    background-color: black; /* Button background color */
+    border: 0px solid black; /* Border color */
+    border-radius: 0px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: block; /* Make button a block element */
+    margin: 10px auto; /* Center the button with some margin */
+    text-align: center; /* Center the text inside the button */
+    text-transform: uppercase; /* Uppercase text */
+    font-weight: 600; /* Font weight */
+    transition: .5s; /* Transition effect */
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 5px 5px #7a4bde; /* Shadow effect */
+}
+
+#pin-form button:hover {
+    box-shadow: 0px 0px #7a4bde; /* Shadow effect */
+    transition: .5s; /* Transition effect */
+    color: #f595ea;
+}
+
+
+/**************************** BOOK NOW *************************/
+
+
+.book-now-button-wrapper * {
+    box-sizing: border-box;
+}
+
+.book-now-button-wrapper .cta {
+    display: flex;
+    padding: 6px 18px; /* Smaller padding for a smaller button */
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px; /* Smaller font size */
+    color: white;
+    background: black; /* Black main color */
+    transition: 1s;
+    box-shadow: 4px 4px 0 #7a4bde;
+    transform: skewX(-15deg);
+    text-transform: uppercase;
+}
+
+.book-now-button-wrapper .cta:focus {
+    outline: none; 
+}
+
+.book-now-button-wrapper .cta:hover {
+    transition: 0.5s;
+    background: #7a4bde; /* Purple hover color */
+    box-shadow: 6px 6px 0 black;
+}
+
+.book-now-button-wrapper .cta span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 0px;
+}
+
+.book-now-button-wrapper .cta:hover span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 20px;
+}
+
+.book-now-button-wrapper span {
+    transform: skewX(15deg);
+}
+
+.book-now-button-wrapper span:nth-child(2) {
+    width: 20px;
+    margin-left: 10px;
+    position: relative;
+    top: 10%;
+}
+
+.book-now-button-wrapper path.one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+}
+
+.book-now-button-wrapper path.two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+}
+
+.book-now-button-wrapper .cta:hover path.three {
+    animation: color_anim 1s infinite 0.2s;
+}
+
+.book-now-button-wrapper .cta:hover path.one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+}
+
+.book-now-button-wrapper .cta:hover path.two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+}
+
+/*************** SVG animations **********************************/
+
+@keyframes color_anim {
+    0% {
+        fill: white;
     }
-
-    .header h1 {
-        font-size: 1.3em !important; /* Increase header font size */
+    50% {
+        fill: #b35f12;
     }
-
-    .profile-picture {
-        width: 80px !important;
-        height: 80px !important;
-    }
-
-    h1, h2, h3 {
-        font-size: 1.1em !important; /* Adjust font size for headings */
-    }
-
-    p.description, .p1, .about {
-        font-size: 0.95em !important; /* Adjust paragraph text size */
+    100% {
+        fill: white;
     }
 }
 
-/* For devices with a max-width of 480px */
-@media (max-width: 480px) {
-    body {
-        width: 100% !important;  /* Ensure the container takes up full width */
-        height: auto !important;  /* Set height to auto */
-        padding: 5px !important;  /* Adjust padding */
-    }
 
-    .header {
-        flex-direction: column !important;
-        align-items: flex-start !important;
-    }
+/**************************** SCROLL BAR ************************************/
 
-    .header h1 {
-        font-size: 1.1em !important; /* Smaller header font size */
-    }
+* {
+    scrollbar-width: thin;
+    scrollbar-color: black #7a4bde;
+}
 
-    .profile-picture {
-        width: 60px !important;
-        height: 60px !important;
-    }
 
-    h1, h2, h3 {
-        font-size: 1em !important;
-    }
+/********************************* SOCIAL MEDIA ICONS **********************/
 
-    p.description, .p1, .about {
-        font-size: 0.85em !important; /* Reduce font size for small devices */
-    }
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
 
-    .about, .p1, .description {
-        margin-bottom: 10px !important;
-    }
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.social-icons li {
+    margin: 0 20px; /* Adjusted margin for even spacing */
+}
+
+.social-icons li a .fa {
+    transition: color .5s; /* Transition for icon color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Ensure icon is vertically centered */
+}
+
+.social-icons li a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #e6e6e6; /* Slight grey color at the top */
+    position: relative;
+    transform: rotate(-30deg) skew(25deg); /* Original angles */
+    transition: background .5s, transform .5s, box-shadow .5s;
+    box-shadow: -10px 10px 5px rgba(0, 0, 0, .5);
+}
+
+.social-icons li a:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -10px;
+    height: 100%;
+    width: 10px;
+    background: #c4c4c4; /* Outline color */
+    transform: rotate(0deg) skewY(-45deg);
+    transition: background .5s;
+}
+
+.social-icons li a:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: -5px;
+    height: 10px;
+    width: 100%;
+    background: #b0b0b0; /* Outline color */
+    transform: rotate(0deg) skewX(-45deg);
+    transition: background .5s;
+}
+
+.social-icons li a:hover {
+    transform: rotate(-30deg) skew(25deg) translate(10px, -7px);
+    box-shadow: -20px 20px 15px rgba(0, 0, 0, .5);
+    background: #7a4bde; /* Hover color */
+}
+
+.social-icons li a:hover:before, .social-icons li a:hover:after {
+    background: #533396; /* Hover color */
+}
+
+.social-icons li a:hover .fa-brands, 
+.social-icons li a:hover .fab {
+    color: #ffbc63; /* Change hover color for icons */
+}
+
+.social-icons li a:hover .fa-regular, 
+.social-icons li a:hover .fa {
+    color: #ffbc63; /* Change hover color for icons */
+}
+
+.fa-brands, .fab {
+    font-family: "Font Awesome 6 Brands";
+    font-weight: 700;
+    color: #41267a;
+    font-size: 20px;
+}
+
+.fa-regular, .fa {
+    color: #41267a;
+    font-size: 20px;
 }
