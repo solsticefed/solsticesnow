@@ -129,6 +129,9 @@ p.description {
         top: 0 !important; /* Remove any top positioning */
         left: 0 !important; /* Remove left positioning */
         border: none !important; /* Remove border */
+        flex: 0 0 100% !important; /* Prevent flexbox from shrinking/growing */
+    }
+
     }
     .parent-of-a6-container {
     width: 100% !important; /* Override any conflicting width */
