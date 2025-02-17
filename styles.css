@@ -1,12 +1,24 @@
-/* Base styles */
+
+   /* Base styles for the body */
 body {
     margin: 0;
+    padding: 20px;
     background-color: #fff;
     color: #000;
     font-family: 'Poppins', sans-serif;
-    padding: 20px;
     background-size: cover;
     background-position: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 2px solid #7a4bde;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: auto;
+
 }
 
 .a6-container {
