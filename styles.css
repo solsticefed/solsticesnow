@@ -118,22 +118,17 @@ p.description {
 
 /* For devices with a max-width of 768px */
 @media (max-width: 768px) {
+    /* Force the a6-container to take full width without inheriting body styles */
     .a6-container {
-        .a6-container {
-    width: 100%;
-    height: 148vh;
-    max-height: 90vh;
-    background-color: rgba(255, 255, 255, 0.85);
-    border: 2px solid #7a4bde;
-    padding: 15px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    position: relative;
-    top: 10px;
-    left: 10px;
-    overflow-y: auto;
+        width: 100% !important; /* Set to full width */
+        max-width: none !important; /* Remove max-width restriction */
+        height: auto !important; /* Let height be auto for mobile */
+        padding: 10px !important; /* Adjust padding */
+        border: none !important; /* Remove border */
+        top: 0 !important; /* Remove top positioning */
+        left: 0 !important; /* Remove left positioning */
+        margin: 0 !important; /* Ensure no margins */
+        box-sizing: border-box !important; /* Ensure proper box-sizing */
     }
 
     .header h1 {
@@ -158,7 +153,7 @@ p.description {
 @media (max-width: 480px) {
     .a6-container {
         width: 100% !important;  /* Ensure the container takes up full width */
-        height: auto !important;  /* Set height to auto for smaller screens */
+        height: auto !important;  /* Set height to auto */
         padding: 5px !important;  /* Adjust padding */
     }
 
