@@ -114,71 +114,67 @@ p.description {
     text-transform: uppercase;
 }
 
-/* Media queries for responsive design */
+/* Mobile Media Queries */
+
+/* For devices with a max-width of 768px */
 @media (max-width: 768px) {
-    /* Ensure the container adapts for smaller screens */
-        .a6-container {
-        width: 100%; /* Full width */
-        border: none; /* Remove border for mobile */
-        padding: 10px; /* Reduce padding */
+    .a6-container {
+        width: 100% !important;  /* Set the width to 100% for smaller screens */
+        max-width: none !important; /* Remove the max-width to prevent any constraints */
+        height: auto !important;   /* Set the height to auto to avoid overflows */
+        padding: 10px !important; /* Adjust padding */
+        border: none !important;  /* Remove border on mobile */
     }
 
-    /* Adjust the header font size */
     .header h1 {
-        font-size: 1.3em; /* Slightly smaller heading */
+        font-size: 1.3em;
     }
 
     .profile-picture {
-        width: 80px; /* Smaller profile picture */
-        height: 80px;
+        width: 80px !important;
+        height: 80px !important;
     }
 
-    /* Adjust the headings for mobile view */
     h1, h2, h3 {
-        font-size: 1.1em; /* Smaller headings */
+        font-size: 1.1em;
     }
 
-    /* Adjust paragraph text size for better readability */
     p.description, .p1, .about {
-        font-size: 0.95em; /* Slightly smaller paragraph text */
+        font-size: 0.95em;
     }
 }
 
+/* For devices with a max-width of 480px */
 @media (max-width: 480px) {
-    /* Stack the header items vertically on small screens */
+    .a6-container {
+        width: 100% !important;  /* Ensure the container takes up full width */
+        height: auto !important;  /* Set height to auto for smaller screens */
+        padding: 5px !important;  /* Adjust padding */
+    }
+
     .header {
         flex-direction: column;
         align-items: flex-start;
     }
-     .a6-container {
-        width: 100%; /* Full width */
-        border: none; /* Remove border for mobile */
-        padding: 10px; /* Reduce padding */
-    }
 
-    /* Further reduce the header font size for small screens */
     .header h1 {
-        font-size: 1.1em; /* Smaller font */
+        font-size: 1.1em !important;
     }
 
-    /* Further reduce profile picture size */
     .profile-picture {
-        width: 60px;
-        height: 60px;
+        width: 60px !important;
+        height: 60px !important;
     }
 
-    /* Adjust heading sizes further for small devices */
     h1, h2, h3 {
-        font-size: 1em; /* Even smaller headings */
+        font-size: 1em !important;
     }
 
-    /* Adjust paragraph text size for small screens */
     p.description, .p1, .about {
-        font-size: 0.85em; /* Smaller paragraph text */
+        font-size: 0.85em !important;
     }
 
-    /* Adjust margins to prevent overflow */
     .about, .p1, .description {
-        margin-bottom: 10px; /* Reduce margin for small screens */
+        margin-bottom: 10px !important;
     }
 }
