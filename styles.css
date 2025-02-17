@@ -131,7 +131,7 @@ p.description {
 /* For devices with a max-width of 768px */
 @media (max-width: 768px) {
     /* Ensure the a6-container forces full width without inheritance */
-    .a6-container {
+    .body {
         width: 100% !important; /* Force full width */
         max-width: none !important; /* Remove max-width */
         height: auto !important; /* Ensure auto height */
